@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Pod-Log\\MasterAdmin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{59C0E2D9-0E0D-4AE0-BDAC-6C24496809BC}|MasterAdmin\\MasterAdmin.csproj|d:\\pod-log\\masteradmin\\masteradmin\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59C0E2D9-0E0D-4AE0-BDAC-6C24496809BC}|MasterAdmin\\MasterAdmin.csproj|solutionrelative:masteradmin\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59C0E2D9-0E0D-4AE0-BDAC-6C24496809BC}|MasterAdmin\\MasterAdmin.csproj|d:\\pod-log\\masteradmin\\masteradmin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{59C0E2D9-0E0D-4AE0-BDAC-6C24496809BC}|MasterAdmin\\MasterAdmin.csproj|solutionrelative:masteradmin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59C0E2D9-0E0D-4AE0-BDAC-6C24496809BC}|MasterAdmin\\MasterAdmin.csproj|d:\\pod-log\\masteradmin\\masteradmin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59C0E2D9-0E0D-4AE0-BDAC-6C24496809BC}|MasterAdmin\\MasterAdmin.csproj|solutionrelative:masteradmin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59C0E2D9-0E0D-4AE0-BDAC-6C24496809BC}|MasterAdmin\\MasterAdmin.csproj|d:\\pod-log\\masteradmin\\masteradmin\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59C0E2D9-0E0D-4AE0-BDAC-6C24496809BC}|MasterAdmin\\MasterAdmin.csproj|solutionrelative:masteradmin\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59C0E2D9-0E0D-4AE0-BDAC-6C24496809BC}|MasterAdmin\\MasterAdmin.csproj|d:\\pod-log\\masteradmin\\masteradmin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59C0E2D9-0E0D-4AE0-BDAC-6C24496809BC}|MasterAdmin\\MasterAdmin.csproj|solutionrelative:masteradmin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59C0E2D9-0E0D-4AE0-BDAC-6C24496809BC}|MasterAdmin\\MasterAdmin.csproj|d:\\pod-log\\masteradmin\\masteradmin\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59C0E2D9-0E0D-4AE0-BDAC-6C24496809BC}|MasterAdmin\\MasterAdmin.csproj|solutionrelative:masteradmin\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59C0E2D9-0E0D-4AE0-BDAC-6C24496809BC}|MasterAdmin\\MasterAdmin.csproj|d:\\pod-log\\masteradmin\\masteradmin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59C0E2D9-0E0D-4AE0-BDAC-6C24496809BC}|MasterAdmin\\MasterAdmin.csproj|solutionrelative:masteradmin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59C0E2D9-0E0D-4AE0-BDAC-6C24496809BC}|MasterAdmin\\MasterAdmin.csproj|d:\\pod-log\\masteradmin\\masteradmin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59C0E2D9-0E0D-4AE0-BDAC-6C24496809BC}|MasterAdmin\\MasterAdmin.csproj|solutionrelative:masteradmin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\Pod-Log\\MasterAdmin\\MasterAdmin\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "MasterAdmin\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\Pod-Log\\MasterAdmin\\MasterAdmin\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "MasterAdmin\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T07:06:22.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Pod-Log\\MasterAdmin\\MasterAdmin\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MasterAdmin\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Pod-Log\\MasterAdmin\\MasterAdmin\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MasterAdmin\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T07:01:24.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Pod-Log\\MasterAdmin\\MasterAdmin\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "MasterAdmin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Pod-Log\\MasterAdmin\\MasterAdmin\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "MasterAdmin\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T06:06:58.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Pod-Log\\MasterAdmin\\MasterAdmin\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "MasterAdmin\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Pod-Log\\MasterAdmin\\MasterAdmin\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "MasterAdmin\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwEEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T05:06:24.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Pod-Log\\MasterAdmin\\MasterAdmin\\appsettings.json",
+              "RelativeDocumentMoniker": "MasterAdmin\\appsettings.json",
+              "ToolTip": "D:\\Pod-Log\\MasterAdmin\\MasterAdmin\\appsettings.json",
+              "RelativeToolTip": "MasterAdmin\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-10T06:07:07.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Pod-Log\\MasterAdmin\\MasterAdmin\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "MasterAdmin\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Pod-Log\\MasterAdmin\\MasterAdmin\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "MasterAdmin\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T06:06:55.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Pod-Log\\MasterAdmin\\MasterAdmin\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "MasterAdmin\\Views\\Login\\Login.cshtml",
+              "ToolTip": "D:\\Pod-Log\\MasterAdmin\\MasterAdmin\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "MasterAdmin\\Views\\Login\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T05:49:18.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Pod-Log\\MasterAdmin\\MasterAdmin\\Program.cs",
+              "RelativeDocumentMoniker": "MasterAdmin\\Program.cs",
+              "ToolTip": "D:\\Pod-Log\\MasterAdmin\\MasterAdmin\\Program.cs",
+              "RelativeToolTip": "MasterAdmin\\Program.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAwwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T05:25:39.749Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
