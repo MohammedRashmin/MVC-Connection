@@ -67,3 +67,4 @@ D:\Pod-Log\MasterAdmin\MasterAdmin\obj\Debug\net8.0\refint\MasterAdmin.dll
 D:\Pod-Log\MasterAdmin\MasterAdmin\obj\Debug\net8.0\MasterAdmin.pdb
 D:\Pod-Log\MasterAdmin\MasterAdmin\obj\Debug\net8.0\MasterAdmin.genruntimeconfig.cache
 D:\Pod-Log\MasterAdmin\MasterAdmin\obj\Debug\net8.0\ref\MasterAdmin.dll
+D:\Pod-Log\MasterAdmin\MasterAdmin\obj\Debug\net8.0\MasterAdmin.sourcelink.json

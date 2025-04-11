@@ -67,3 +67,4 @@ D:\Pod-Log\MasterClient\MasterClient\obj\Debug\net8.0\refint\MasterClient.dll
 D:\Pod-Log\MasterClient\MasterClient\obj\Debug\net8.0\MasterClient.pdb
 D:\Pod-Log\MasterClient\MasterClient\obj\Debug\net8.0\MasterClient.genruntimeconfig.cache
 D:\Pod-Log\MasterClient\MasterClient\obj\Debug\net8.0\ref\MasterClient.dll
+D:\Pod-Log\MasterClient\MasterClient\obj\Debug\net8.0\MasterClient.sourcelink.json

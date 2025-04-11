@@ -1,59 +1,61 @@
-﻿using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 using System.Text;
 using System.IdentityModel.Tokens.Jwt;
+using Microsoft.Extensions.Logging;
 
 namespace MasterAdmin.Controllers
 {
     public class LoginController : Controller
     {
         private readonly IConfiguration _configuration;
+        private readonly ILogger<LoginController> _logger;
 
-        public LoginController(IConfiguration configuration)
+        public LoginController(IConfiguration configuration, ILogger<LoginController> logger)
         {
             _configuration = configuration;
+            _logger = logger;
         }
 
         [HttpGet]
-        public IActionResult Login(string returnUrl = "https://localhost:7275/Home/Index")
+        public IActionResult Login(string returnUrl = "/Home/Index")
         {
+            // Redirect if already authenticated
+            if (User.Identity != null && User.Identity.IsAuthenticated)
+            {
+                return Redirect(returnUrl);
+            }
+
             ViewBag.ReturnUrl = returnUrl;
-            return View();
+            return View(); // Shows Login.cshtml
         }
 
         [HttpPost]
-        public IActionResult Login(string username, string password, string returnUrl)
+        public IActionResult Login(string username, string password, string returnUrl = "/Home/Index")
         {
-            if (username == "admin" && password == "admin123")
+            if (username == "Rash" && password == "123456")
             {
-                // Create claims
                 var claims = new List<Claim>
-        {
-            new Claim(ClaimTypes.Name, username),
-            new Claim(ClaimTypes.Role, "Admin")
-        };
+                {
+                    new Claim(ClaimTypes.Name, username),
+                    new Claim(ClaimTypes.Role, "Rashmi")
+                };
 
-                // Sign in with cookie (for MasterAdmin)
-                var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-                var principal = new ClaimsPrincipal(identity);
-                HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal).Wait();
-
-                // Generate JWT for MasterClient
-                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("your-very-long-secret-key-256bits-long"));
+                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:SecretKey"]));
                 var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
                 var token = new JwtSecurityToken(
-                    issuer: "MasterAdmin",
-                    audience: "MasterClient",
+                    issuer: _configuration["Jwt:Issuer"],
+                    audience: _configuration["Jwt:Audience"],
                     claims: claims,
                     expires: DateTime.UtcNow.AddMinutes(30),
                     signingCredentials: credentials
                 );
+
                 var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
 
-                // Set token as cookie (for MasterClient)
+                // Set JWT token in a secure cookie
                 Response.Cookies.Append("AuthToken", tokenString, new CookieOptions
                 {
                     HttpOnly = true,
@@ -62,24 +64,19 @@ namespace MasterAdmin.Controllers
                     Expires = DateTimeOffset.UtcNow.AddMinutes(30)
                 });
 
-                // 🔁 Redirect to wherever the user came from
                 return Redirect(returnUrl);
             }
 
-            ViewBag.Error = "Invalid credentials!";
+            // Show error on view instead of returning 401 directly
+            ViewBag.Error = "Invalid credentials";
+            ViewBag.ReturnUrl = returnUrl;
             return View();
         }
 
-
         [HttpPost]
-        public async Task<IActionResult> Logout()
+        public IActionResult Logout()
         {
-            // ✅ Sign out from cookie authentication
-            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-
-            // ✅ Clear the JWT token from the cookie
             Response.Cookies.Delete("AuthToken");
-
             return RedirectToAction("Login", "Login");
         }
     }

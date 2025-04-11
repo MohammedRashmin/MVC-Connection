@@ -2,25 +2,97 @@
     ViewData["Title"] = "Login";
 }
 
-<h1>MasterAdmin Login</h1>
+@* Include Bootstrap CSS *@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-@if (ViewBag.Error != null)
-{
-    <div class="alert alert-danger">@ViewBag.Error</div>
-}
+@* Custom Styles *@
+<style>
+    body {
+        background-color: #f4f7fc;
+        font-family: 'Arial', sans-serif;
+    }
+    h1{
+        align-items: center;
+        color: #b21870;
+        font-family: "Raleway", sans-serif;
+    }
+    .login-container {
+        max-width: 400px;
+        margin: 100px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-<form method="post" action="/Login/Login">
-    <input type="hidden" name="returnUrl" value="@ViewBag.ReturnUrl" />
-    <div class="form-group">
-        <label>Username:</label>
-        <input type="text" name="username" class="form-control" required />
-    </div>
-    <div class="form-group">
-        <label>Password:</label>
-        <input type="password" name="password" class="form-control" required />
-    </div>
-    <button type="submit" class="btn btn-primary">Login</button>
-</form>
+    .login-container h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    .login-container .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .login-container .btn {
+        width: 100%;
+        padding: 10px;
+            background-color: #b21870;
+            align-items: center;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+            font-family: "Raleway", sans-serif;
+            margin-bottom: 40px;
+    }
+
+      
+    .login-container .btn:hover {
+        background-color: #0056b3;
+    }
+
+    .alert-danger {
+        text-align: center;
+    }
+
+    .form-control {
+        border-radius: 5px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .form-group label {
+        font-weight: bold;
+    }
+
+ 
+</style>
+
+<div class="login-container">
+    <h1>Login</h1>
+
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger">@ViewBag.Error</div>
+    }
+
+    <form method="post" action="/Login/Login">
+        <input type="hidden" name="returnUrl" value="@ViewBag.ReturnUrl" />
+        
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" class="form-control" required />
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" class="form-control" required />
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+</div>
 
 <script>
     // Assuming the server sends the token after a successful login in MasterAdmin
@@ -31,3 +103,8 @@
 
     // Call storeJwtToken(token) when the user logs in successfully
 </script>
+
+@* Include Bootstrap JS *@
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

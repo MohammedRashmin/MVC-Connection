@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.AspNetCore.Http.Extensions;
 
 namespace MasterClient
 {
@@ -10,33 +11,70 @@ namespace MasterClient
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // Add Controllers with Views
+            builder.Services.AddControllersWithViews();
+
+            // Configure JWT Authentication in MasterClient
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
                         ValidateIssuer = true,
-                        ValidIssuer = "MasterAdmin",  // Issuer set in MasterAdmin
+                        ValidIssuer = builder.Configuration["Jwt:Issuer"],  // Same as the issuer in MasterAdmin
                         ValidateAudience = true,
-                        ValidAudience = "MasterClient", // Audience set in MasterClient
+                        ValidAudience = builder.Configuration["Jwt:Audience"],  // Same as the audience in MasterAdmin
                         ValidateLifetime = true,
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("your-very-long-secret-key-256bits-long"))
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"])),
+                        ClockSkew = TimeSpan.Zero
+                    };
+
+                    options.Events = new JwtBearerEvents
+                    {
+                        OnMessageReceived = context =>
+                        {
+                            // Retrieve JWT token from cookies or header
+                            var token = context.Request.Cookies["AuthToken"];
+                            if (string.IsNullOrEmpty(token))
+                            {
+                                token = context.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+                            }
+                            if (!string.IsNullOrEmpty(token))
+                            {
+                                context.Token = token;
+                            }
+                            return Task.CompletedTask;
+                        }
                     };
                 });
 
-            builder.Services.AddControllersWithViews();
-
-            // CORS configuration
-            builder.Services.AddCors(options =>
-            {
-                options.AddPolicy("AllowMasterAdmin",
-                    builder => builder.WithOrigins("https://localhost:7275")  // Master Admin's URL
-                                      .AllowAnyMethod()
-                                      .AllowAnyHeader());
-            });
-
             var app = builder.Build();
 
+            // Middleware to read JWT from cookie and add it to Authorization header
+            app.Use(async (context, next) =>
+            {
+                var token = context.Request.Cookies["AuthToken"];
+                if (!string.IsNullOrEmpty(token))
+                {
+                    context.Request.Headers["Authorization"] = $"Bearer {token}";
+                }
+                await next();
+            });
+
+            // Middleware to redirect to login if unauthorized
+            app.Use(async (context, next) =>
+            {
+                await next();
+
+                if (context.Response.StatusCode == 401 || context.Response.StatusCode == 403)
+                {
+                    var returnUrl = Uri.EscapeDataString(context.Request.GetDisplayUrl());
+                    context.Response.Redirect($"https://localhost:7275/Login/Login?returnUrl={returnUrl}");
+                }
+            });
+
+            // Middleware setup
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
@@ -45,17 +83,14 @@ namespace MasterClient
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseRouting();
 
-            app.UseCors("AllowMasterAdmin");
-
+            // Enable Authentication & Authorization
             app.UseAuthentication();
             app.UseAuthorization();
 
-            app.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+            // Map default controller route
+            app.MapDefaultControllerRoute();
 
             app.Run();
         }

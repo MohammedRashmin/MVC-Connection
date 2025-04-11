@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Pod-Log\\MasterClient\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E287EF9A-E028-458C-88B2-4690D685A569}|MasterClient\\MasterClient.csproj|d:\\pod-log\\masterclient\\masterclient\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E287EF9A-E028-458C-88B2-4690D685A569}|MasterClient\\MasterClient.csproj|solutionrelative:masterclient\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E287EF9A-E028-458C-88B2-4690D685A569}|MasterClient\\MasterClient.csproj|d:\\pod-log\\masterclient\\masterclient\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E287EF9A-E028-458C-88B2-4690D685A569}|MasterClient\\MasterClient.csproj|solutionrelative:masterclient\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E287EF9A-E028-458C-88B2-4690D685A569}|MasterClient\\MasterClient.csproj|d:\\pod-log\\masterclient\\masterclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E287EF9A-E028-458C-88B2-4690D685A569}|MasterClient\\MasterClient.csproj|solutionrelative:masterclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,12 +19,8 @@
       "RelativeMoniker": "D:0:0:{E287EF9A-E028-458C-88B2-4690D685A569}|MasterClient\\MasterClient.csproj|solutionrelative:masterclient\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E287EF9A-E028-458C-88B2-4690D685A569}|MasterClient\\MasterClient.csproj|d:\\pod-log\\masterclient\\masterclient\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E287EF9A-E028-458C-88B2-4690D685A569}|MasterClient\\MasterClient.csproj|solutionrelative:masterclient\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E287EF9A-E028-458C-88B2-4690D685A569}|MasterClient\\MasterClient.csproj|d:\\pod-log\\masterclient\\masterclient\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E287EF9A-E028-458C-88B2-4690D685A569}|MasterClient\\MasterClient.csproj|solutionrelative:masterclient\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E287EF9A-E028-458C-88B2-4690D685A569}|MasterClient\\MasterClient.csproj|d:\\pod-log\\masterclient\\masterclient\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E287EF9A-E028-458C-88B2-4690D685A569}|MasterClient\\MasterClient.csproj|solutionrelative:masterclient\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E287EF9A-E028-458C-88B2-4690D685A569}|MasterClient\\MasterClient.csproj|d:\\pod-log\\masterclient\\masterclient\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -38,37 +42,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\Pod-Log\\MasterClient\\MasterClient\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "MasterClient\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\Pod-Log\\MasterClient\\MasterClient\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "MasterClient\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T04:03:19.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Pod-Log\\MasterClient\\MasterClient\\appsettings.json",
               "RelativeDocumentMoniker": "MasterClient\\appsettings.json",
               "ToolTip": "D:\\Pod-Log\\MasterClient\\MasterClient\\appsettings.json",
               "RelativeToolTip": "MasterClient\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-10T08:59:43.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T08:59:43.011Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Pod-Log\\MasterClient\\MasterClient\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "MasterClient\\Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\Pod-Log\\MasterClient\\MasterClient\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "MasterClient\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-10T06:27:39.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T06:27:39.157Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "D:\\Pod-Log\\MasterClient\\MasterClient\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "MasterClient\\Views\\_ViewImports.cshtml",
@@ -76,25 +90,24 @@
               "RelativeToolTip": "MasterClient\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-10T06:27:50.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T06:27:50.573Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Pod-Log\\MasterClient\\MasterClient\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "MasterClient\\Controllers\\HomeController.cs",
               "ToolTip": "D:\\Pod-Log\\MasterClient\\MasterClient\\Controllers\\HomeController.cs",
               "RelativeToolTip": "MasterClient\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAYwDEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T05:13:39.894Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "D:\\Pod-Log\\MasterClient\\MasterClient\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "MasterClient\\Views\\Home\\Privacy.cshtml",
@@ -102,12 +115,11 @@
               "RelativeToolTip": "MasterClient\\Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-10T06:27:51.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T06:27:51.612Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "D:\\Pod-Log\\MasterClient\\MasterClient\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "MasterClient\\Views\\_ViewStart.cshtml",
@@ -115,21 +127,19 @@
               "RelativeToolTip": "MasterClient\\Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-10T06:27:48.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T06:27:48.771Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Pod-Log\\MasterClient\\MasterClient\\Program.cs",
               "RelativeDocumentMoniker": "MasterClient\\Program.cs",
               "ToolTip": "D:\\Pod-Log\\MasterClient\\MasterClient\\Program.cs",
               "RelativeToolTip": "MasterClient\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwAwAAABWAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwCMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T05:11:55.451Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T05:11:55.451Z"
             }
           ]
         }

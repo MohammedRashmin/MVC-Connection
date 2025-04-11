@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MasterClient")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d2b89f8573cc74b23f5faae18324107f2ed3cdb")]
 [assembly: System.Reflection.AssemblyProductAttribute("MasterClient")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MasterClient")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

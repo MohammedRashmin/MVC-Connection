@@ -2,6 +2,8 @@
 using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace MasterClient.Controllers
 {
@@ -16,6 +18,7 @@ namespace MasterClient.Controllers
 
         public IActionResult Index()
         {
+            // Get the token from the cookie
             var token = Request.Cookies["AuthToken"];
             if (string.IsNullOrEmpty(token))
             {
@@ -24,14 +27,17 @@ namespace MasterClient.Controllers
 
             try
             {
+                // Validate the token
                 var handler = new JwtSecurityTokenHandler();
                 var jsonToken = handler.ReadToken(token) as JwtSecurityToken;
 
                 if (jsonToken != null)
                 {
+                    // Validate the token's claims and extract user information
                     var username = jsonToken.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value;
                     var role = jsonToken.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
 
+                    // Set claims to the ViewBag or use them as needed
                     ViewBag.Username = username;
                     ViewBag.Role = role;
 
@@ -40,12 +46,11 @@ namespace MasterClient.Controllers
             }
             catch (Exception ex)
             {
-                // log error
+                _logger.LogError("Token validation failed", ex);
             }
 
+            // Redirect to login if token validation fails
             return Redirect("https://localhost:7275/Login/Login?returnUrl=https://localhost:7155/Home/Index");
         }
-
     }
 }
-
